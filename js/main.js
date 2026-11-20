@@ -37,7 +37,7 @@ function selecionado(alternativaEscolhida){
     if (indiceQ === questoes.length){
         trocarTela(telaQuiz2, telaProces);
         function verP() {
-            if (pontosQ >= 6) {
+            if (pontosQ >= 3) {
                 trocarTela(telaProces, telaRev);
                 setTimeout(finalizarOperação, 10000);
             }
