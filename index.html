@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Operação Upgrade</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+
+        <section id="tela-inicial">
+
+            <p>SISTEMA DE DISTRIBUIÇÃO DE BENEFÍCIOS TECNOLÓGICOS</p>
+
+            <h1>ANÚNCIO DE CONTEMPLAÇÃO</h1>
+
+            <p>
+                Um benefício extraordinário foi identificado.
+                Sua participação nesta avaliação é obrigatória.
+            </p>
+
+            <button id="start-button">
+                INICIAR AVALIAÇÃO
+            </button>
+
+            <p class=aviso>AVISO: A recusa em participar poderá resultar em sérias consequências.</p>
+
+        </section>
+
+        <section id="tela-avaliacao" hidden>
+            <h2>AUTENTICAÇÃO</h2>
+            <div id="frase"> Carregando...</div>
+            <p>O indivíduo encontra-se sob investigação por motivos ainda não divulgados</p>
+        </section>
+
+        <section id="tela-quiz" hidden>
+            <h2>AVALIAÇÃO DE COMPETÊNCIA</h2>
+
+            <p>Responda às perguntas a seguir, indivíduo.</p>
+            <button id="perguntas">
+                COMEÇAR
+            </button>
+        </section>
+
+        <section id="tela-quiz2" hidden>
+            <h1 id="pontos">0</h1>
+            <h2 id="enunciado">Pergunta</h2>
+            <button id="alt1" class="alternativa"></button>
+            <button id="alt2" class="alternativa"></button>
+            <button id="alt3" class="alternativa"></button>
+            <button id="alt4" class="alternativa"></button>
+        </section>
+
+        <section id="tela-processamento" hidden>
+            <h2>PROCESSAMENTO DE DADOS</h2>
+            <p>Aguarde enquanto o sistema trabalha...</p>
+        </section>
+
+        <section id="tela-revelacao" hidden>
+            <h2>RESULTADO DA AVALIAÇÃO</h2>
+            <p>Um benefício tecnológico foi concedido.</p>
+
+            <img src="assets/images/placa-video.png" alt="Placa de vídeo concedida pelo sistema">
+        </section>
+
+        <section id="tela-final" hidden>
+            <h2>OPERAÇÃO CONCLUÍDA</h2>
+            <p>Um presente de alguém que muito te admira.
+Que você, merecidamente, possa aproveitar tudo de melhor que há nessa vida!
+Você é gigante, e quando duvidar disso, eu estarei aqui.
+
+Pode focar no seu futuro com o Ale, pois eu cubro suas costas :)
+</p>
+        </section>
+
+    </main>
+
+</body>
+</html>

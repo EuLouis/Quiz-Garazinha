@@ -1,0 +1,219 @@
+/*configurações gerais*/
+:root {
+    --cor-fundo: #09090f;
+    --cor-painel: #11111b;
+    --cor-vermelho: #950101;
+    --cor-destaque: #ef4444;
+    --cor-texto: #e5e7eb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+
+/*organização principal*/
+main {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+}
+
+/* TELAS DO SISTEMA*/
+
+section {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+
+    text-align: center;
+
+    padding: 48px 32px;
+
+    background-color: var(--cor-painel);
+    border: 1px solid #29293a;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* TÍTULOS */
+
+h1 {
+    font-size: 42px;
+    color: var(--cor-destaque);
+
+    margin: 24px 0;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 28px;
+    color: var(--cor-destaque);
+
+    margin-bottom: 20px;
+}
+
+/* PARÁGRAFOS */
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+
+    margin-bottom: 16px;
+    
+}
+
+/*MENSAGENS ALTERNADAS DE CARREGAMENTO*/
+
+#frase {
+    font-size: 21px;
+    line-height:1.7;
+
+    margin-bottom: 16px;
+}
+
+
+.aviso {
+    color: #1e1e27;
+    font-style: italic;
+    margin-bottom: -25px;
+    margin-top: 25px;
+}
+
+/* BOTÃO PRINCIPAL */
+
+#start-button {
+    background-color: var(--cor-vermelho);
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 16px 28px;
+    margin-bottom: 16px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: help;
+
+    transition: background-color 0.3s ease;
+}
+
+/* BOTÃO DE INICIAR O QUIZ */
+
+#pontos {
+    position: absolute;
+    top: 1px;
+    right: 20px;
+
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#perguntas {
+    background-color: var(--cor-vermelho);
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 16px 28px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: help;
+
+    transition: background-color 0.3s ease;
+}
+
+
+/* EFEITO AO PASSAR O MOUSE*/
+
+#start-button:hover {
+    background-color: var(--cor-destaque);
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 600px) {
+    section {
+        padding: 32px 20px;
+    }
+
+    h1 {
+        font-size:30px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    #start-button {
+        width: 100%;
+    }
+    
+}
+
+[hidden] {
+    display: none !important;
+}
+
+/* imagem da placa */
+
+#tela-revelacao img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+}
+
+/* BOTÕES DAS ALTERNATIVAS */
+.alternativa {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    margin: 12px 0;
+
+    background-color: #1c1c2b;
+    color: var(--cor-texto);
+
+    border: 1px solid #3a3a4a;
+    border-radius: 8px;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.alternativa:hover {
+    background-color: var(--cor-vermelho);
+    border-color: var(--cor-destaque);
+}
+
+.alternativa:focus-visible {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 3px;
+}
